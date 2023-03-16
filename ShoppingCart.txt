@@ -1,0 +1,30 @@
+void main() {
+ Product myProduct = Product();
+  myProduct.name = 'Pants';
+  myProduct.price = 339;
+  myProduct.size = 38;
+  myProduct.inventory = 39;
+  myProduct.discount = 10;
+  myProduct.isPrepaid = true;
+  myProduct.description = 'This is a Gents Pant';
+  Product myProduct2 = Product();
+  myProduct2.name = 'Tshirts';
+ print('Product Description = ${myProduct.description},${myProduct.discount}');
+  print('Product2 name = ${myProduct2.name}');
+  myProduct.addToCart();
+ }
+class Product{
+  int? size;
+  int? price;
+  int? inventory;
+  String? name;
+  bool? isPrepaid;
+  String? description;
+  double? discount;
+  Product(){
+    print('This is a default Constructor');
+  }
+  void addToCart(){
+    print('Adding To cart');
+  }
+}
