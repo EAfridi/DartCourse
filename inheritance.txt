@@ -1,0 +1,44 @@
+void main() {
+ Dog dog = Dog(name: 'German Shephard',skinColor: 'Black');
+  print('name = ${dog.name}');
+    dog.bark();
+    dog.sleep();
+  }
+
+class Animal{
+  String name;
+  String skinColor;
+  Animal({required this.name, required this.skinColor});
+  
+  void eat(){
+    print('Animal is eating');
+  }
+  void sleep(){
+    print('Animal is sleeping');
+  }
+  
+}
+
+
+class Dog extends Animal{
+  Dog({required String name, 
+       required String skinColor}):super(name:name,skinColor:skinColor);
+  void bark(){
+    print('Dog is Barking');
+  }
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
