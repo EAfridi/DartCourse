@@ -1,0 +1,26 @@
+void main() {
+  
+Home myHome = Home(stories: '39',color: 'Light Blue');
+  print('Color of the House = ${myHome.color}');
+}
+
+class Building{
+  String stories;
+  String color;
+  Building({required this.stories, required this.color});
+  void construction(){
+    print('home is being built');
+  }
+  void paint(){
+    print('Home is being painted');
+  }
+}
+
+class Home extends Building{
+  
+  Home({required String stories,required String color}):super(stories:stories,color: color);
+  void tall(){
+    print('The House is very Tall');
+  }
+  
+}
