@@ -1,0 +1,47 @@
+void main() {
+  List months = ['January','February', 'March'];
+  for(int i=0; i<months.length; i++){
+    print("i= $i");
+    print("Months of index $i = ${months[i]}");
+  }
+  
+}
+
+--------------------------------------------
+
+import 'dart:io';
+void main(){
+    List ages = [];
+    for(int i=0;i<4;i++){
+        print('enter ages');
+        String? age = stdin.readLineSync();
+        ages.add(age);
+    }
+    for(int j=0; j<ages.length; j++){
+        print('your age is : '+ages[j]);
+    }
+}
+
+-----------------------------------------------
+
+class Product{
+  String size;
+  double price;
+  String dimension;
+  Product({required this.size, required this.price, required this.dimension});
+}
+
+
+void main(){
+List<Product> products = 
+[
+Product(dimension: "24x11",price: 1600, size: "XXX-Large"),
+Product(dimension: "23x11",price: 1500, size: "XX-Large"),
+Product(dimension: "21x11",price: 1400, size: "X-Large"),
+];
+products.add(Product(dimension: "240x11", price:1100, size: "Medium"));
+print(products[0].dimension);
+print(products[1].size);
+print(products[2].price);
+}
+
